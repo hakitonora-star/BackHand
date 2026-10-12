@@ -11,8 +11,10 @@ const server=http.createServer(async(req,res)=>{
     }
     else if(req.method=="POST"){
         // IN POST request ,let's send the response code as 201
-        res.writeHead(201);
-        //    res.writeHead(404);
+        // res.writeHead(204);no response in 204
+        //    res.writeHead(404);\
+         res.writeHead(200);
+
 
          res.end("POST request received")
         
