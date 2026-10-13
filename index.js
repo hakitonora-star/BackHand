@@ -23,7 +23,7 @@ const server=http.createServer(async(req,res)=>{
         
     }
     else{
-        console.log("hello world");
+        console.log("NOT RECEIvED REQUEST");
     }
 
 })
