@@ -1,8 +1,9 @@
 const http=require('http'); // http module can help you to create http server
+const { serverConfig } = require('./config');
 
 // we would like to setup a basic https server
 
-const PORT =3000;
+
 const server=http.createServer(async(req,res)=>{
     if(req.method=="GET"){
         res.end("GET request received😁");
@@ -27,7 +28,7 @@ const server=http.createServer(async(req,res)=>{
 
 })
 
-server.listen(PORT,()=>{
+server.listen(serverConfig.PORT,()=>{
     console.log(`server is running means listining and running at PORT${PORT}`)
     //This starts the server and makes it listen for incoming requests on port 3000.
 
