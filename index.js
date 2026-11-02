@@ -17,7 +17,7 @@ const server=http.createServer(async(req,res)=>{
          res.writeHead(200);
 
 
-         res.end("POST request receive")
+         res.end("POST request received")
         
 
         
